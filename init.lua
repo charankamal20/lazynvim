@@ -75,7 +75,7 @@ require("mason-lspconfig").setup({
 	ensure_installed = {
 		"ts_ls",
 		"gopls",
-    "lua_ls",
+		"lua_ls",
 		"eslint",
 		"html",
 		"cssls",
@@ -103,13 +103,13 @@ require("mason-lspconfig").setup({
 					completions = {
 						completeFunctionCalls = true,
 					},
-          gopls = {
-            completeUnimported = true, 
-            usePlaceholders = true, 
-            analysis = {
-              unusedparams = true,
-            }
-          }
+					gopls = {
+						completeUnimported = true,
+						usePlaceholders = true,
+						analysis = {
+							unusedparams = true,
+						},
+					},
 				},
 			})
 		end,
