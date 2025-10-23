@@ -34,5 +34,9 @@ return {
 		})
 
 		vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
+		-- Format selected text in visual mode
+		vim.keymap.set("v", "<leader>gF", function()
+			vim.lsp.buf.format()
+		end, { desc = "Format selection" })
 	end,
 }

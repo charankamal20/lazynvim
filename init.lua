@@ -44,6 +44,19 @@ cmp.setup({
 
 local lsp_cmds = vim.api.nvim_create_augroup("lsp_cmds", { clear = true })
 
+vim.diagnostic.config({
+  virtual_text = true,
+  signs = true,
+  underline = true,
+  update_in_insert = false,
+})
+
+vim.api.nvim_create_autocmd("CursorHold", {
+  callback = function()
+    vim.diagnostic.open_float(nil, { focusable = false })
+  end,
+})
+
 vim.api.nvim_create_autocmd("LspAttach", {
 	group = lsp_cmds,
 	desc = "LSP actions",
