@@ -18,7 +18,7 @@ return {
 			shell = vim.o.shell,
 		})
 
-		vim.keymap.set("n", "<leader>tt", "<cmd>ToggleTerm", { desc = "Toggle floating terminal" })
+    vim.keymap.set("n", "<leader>tt", "<cmd>ToggleTerm<CR>", { desc = "Toggle floating terminal" })
 		vim.keymap.set("n", "<leader>tf", "<cmd>ToggleTerm direction=float<CR>", { desc = "Toggle floating terminal" })
 
 		vim.keymap.set(

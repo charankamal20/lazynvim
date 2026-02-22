@@ -41,7 +41,6 @@ return {
           { name = "Lackluster Night", colorscheme = "lackluster-night" },
           { name = "Lackluster Dark", colorscheme = "lackluster-dark" },
 
- 
           -- GitHub themes
           { name = "GitHub Dark", colorscheme = "github_dark" },
           { name = "GitHub Light", colorscheme = "github_light" },
